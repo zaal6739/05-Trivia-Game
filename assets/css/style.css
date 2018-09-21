@@ -1,0 +1,36 @@
+body {
+    /* background: url('http://awesomebryner.com/wp-content/uploads/old-style-decorative-world-map-vintage-maps.jpg') no-repeat center center fixed; */
+    background: url('http://awesomebryner.com/wp-content/uploads/retro-world-map-vector-valid-1863-majesty-maps-prints-for-vintage-madriver-of.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    /* background-blend-mode: soft-light; */
+    font-family: 'Abril Fatface', cursive;
+} 
+
+.jumbotron {
+    background: transparent;
+}
+.content{
+    background-color: bisque;
+    text-align:center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom:10%;
+}
+
+.buttonContainer {
+    margin-bottom:10%;
+}
+
+#gif {
+ margin:5%;
+}
+
+#startOverBtn {
+ margin:5%;
+}
