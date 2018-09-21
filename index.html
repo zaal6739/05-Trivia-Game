@@ -19,20 +19,16 @@
 
 </head>
 <body>
-        
+<!-- wrap content in a fluid container -->
 <div class="container-fluid full">
         <div class="container-fluid">
+            <!-- create header space with transparent jumbotron -->
             <div class='jumbotron'>
-      
-
             </div>
-        
-
         <div class = 'row'>
-
             <div class = 'col-md-4'>
             </div>
-               
+            <!-- center trivia game in middle of page -->
             <div class = 'col-md-4 content'>
 
                     <div class='header'>
@@ -40,28 +36,30 @@
                             <h1>Geography Trivia Game</h1>
             
                         </div>
+            <!-- javascript game elements -->
             <div class = 'buttonContainer'>
-                <button id ='startBtn' type='button' class='btn btn-dark btn-lg btn-block'>
+                <button id ='startGameBtn' type='button' class='btn btn-dark btn-lg btn-block'>
                     Start Game!
                 </button>    
             </div>
             <div id=timeLeft></div>
-            <div id=currentQuestion></div>
+            <!-- questions -->
+            <div id=presentQuestion></div>
             <div class='question'></div>
-            <div class='answerList'></div>
-             <!-- Answer Page -->
+              <!-- Answers to each question -->
+            <div class='answerArray'></div>
             <div class='answerContainer'>
             <div id=message></div>
             <div id=correctedAnswer></div>
             <div id=gif></div>
             </div>
-            <!-- Scoreboard -->
+            <!-- Final Page with Scores -->
             <div id=finalMessage></div>
-            <div id=correctAnswers></div>
-            <div id=incorrectAnswers></div>
-            <div id=unanswered></div>
-            <!-- <div id=startOverBtn></div> -->
-            <button id ='startOverBtn' type="button" class="btn btn-dark"></button>
+            <div id=rightAnswers></div>
+            <div id=wrongAnswers></div>
+            <div id=notAnswered></div>
+        
+            <button id ='resetBtn' type="button" class="btn btn-dark"></button>
             </div>
 
             
