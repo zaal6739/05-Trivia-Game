@@ -101,11 +101,12 @@ $( window ).on( "load", function() {
 		$('#gif').empty();
 		answered = true;
 	
-		$('#presentQuestion').html('Question #'+(presentQuestion+1)+'/'+gameQuestions.length);
+		
 		$('.question').html('<h2>' + gameQuestions[presentQuestion].question + '</h2>');
 		
 		//append answer options on screen
-		for(var i = 0; i < 4; i++){
+		for(var i = 0; i < 4; i++)
+		{
 			var options = $('<div>');
 			options.html('<p>'+gameQuestions[presentQuestion].answerArray[i]+'</p>');
 			options.attr({'data-index': i });
@@ -168,10 +169,10 @@ $( window ).on( "load", function() {
 	
 		//timer for answer screen
 		if(presentQuestion == (gameQuestions.length-1)){
-			setTimeout(score, 3500)
+			setTimeout(score, 3800)
 		} else{
 			presentQuestion++;
-			setTimeout(nextQuestion, 3300);
+			setTimeout(nextQuestion, 3800);
 		}	
 	}
 	//shows final scores page
